@@ -23,17 +23,16 @@ Each line of the file indicates that it is possible to travel between the two ci
 In the example above it is possible to travel between Boston and New York, and also between New York and Philadelphia and between Philadelphia and Pittsburgh, so it follows that Boston and Pittsburgh are connected. On the other hand, there is no path between Boston and Tampa, so they are not connected.
 
 The program will be invoked from the command line as:
-java Connected <filename> <cityname1> <cityname2>
-and will output a single line stating "yes" or "no"
+> java Connected <filename> <cityname1> <cityname2>
+
+and will output a single line stating "yes" or "no".
+
 Here are some sample interactions, assuming the example file above is named "cities.txt"
-> java Connected cities.txt "New York" Boston
-yes
-> java Connected cities.txt Boston Pittsburgh
-yes
-> java Connected cities.txt Boston Tampa
-no
-> java Connected cities.txt Boston Ypsilanti
-no
+
+> java Connected cities.txt "New York" Boston <br>yes<br>
+> java Connected cities.txt Boston Pittsburgh <br>yes<br>
+> java Connected cities.txt Boston Tampa <br>no<br>
+> java Connected cities.txt Boston Ypsilanti <br>no<br>
 
 
 Notes
@@ -43,5 +42,3 @@ Notes
 - Your choice of algorithms and data structures should allow the program to handle arbitrarily large files reasonably efficiently. You can, however, assume that the file will fit in memory. 
 - The program is permitted to return any or no output when given a malformed input file or malformed command line. 
 - If a city is not in the file, then it is connected to no other city. 
-
-End.
